@@ -1,5 +1,3 @@
-# DeML-Oracle
-
 # 🔮 DeML Oracle – Decentralized Machine Learning Oracle Network
 
 > A hybrid system that bridges smart contracts and machine learning to provide decentralized, trustworthy, and verifiable AI-powered insights on-chain.
