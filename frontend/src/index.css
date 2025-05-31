@@ -1,0 +1,71 @@
+/* Global styles complementing MUI's CssBaseline */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif; /* Consistent with MUI theme */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #EAECEF; /* Default text color from theme */
+  background-color: #1A1C22; /* Match theme background.default */
+  line-height: 1.5;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex; /* Ensures the Box in App.tsx can take full height */
+  flex-direction: column; /* Aligns with App.tsx's Box display='flex' and flex-direction if it were column */
+                          /* For display: 'flex' on root's child (Box in App.tsx), this might not be strictly necessary */
+                          /* but good for overall page structure if #root itself needs to manage flex children */
+}
+
+/* Custom scrollbar for a more integrated dark theme feel (optional) */
+/* Works in WebKit-based browsers (Chrome, Safari, Edge) and Firefox (newer versions) */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #2B2F36; /* A dark grey from the theme, e.g., paper background */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #F0B90B; /* Binance yellow, theme's secondary color */
+  border-radius: 4px;
+  border: 2px solid #2B2F36; /* Creates a padding effect around the thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #d9a40a; /* Darker yellow on hover */
+}
+
+/* For Firefox */
+/* For basic scrollbar coloring in Firefox 64+ */
+/* For more advanced styling, Firefox support is more limited compared to WebKit */
+* {
+  scrollbar-width: thin; /* "auto" or "thin" */
+  scrollbar-color: #F0B90B #2B2F36; /* thumb and track color */
+}
+
+
+a {
+  color: #F0B90B; /* Theme secondary color for links */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Additional global utility classes or resets can go here */
